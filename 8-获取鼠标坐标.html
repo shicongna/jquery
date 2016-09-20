@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>坐标</title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			border:1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<h1>横坐标：<span class="x"></span></h1>
+	<h1>横坐标：<span class="y"></span></h1>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script>
+		$(".box").mousemove(function(event){
+			$(".x").text(event.pageX)
+			$(".y").text(event.pageY)
+		})
+	</script>
+</body>
+</html>
